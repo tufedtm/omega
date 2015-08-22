@@ -3,8 +3,9 @@
 @yellow: #FFDF00;
 @yellow-o: fade(@yellow, 40%);
 @grey-hard: #313140;
-@grey-hard-o: #5a5a66;
-
+@grey-hard-o: fade(@grey-hard, 80%);
+@grey-light: #ECECFB;
+@grey-light-o: fade(@grey-light, 50%);
 
 
 
@@ -13,8 +14,10 @@
 
 
 .wrap(@maxw: 1108px){
-  max-width: @maxw;
+  max-width: @maxw + 30px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 
@@ -23,7 +26,7 @@
 
 
 
-.button(@color: #000, @fz: 18px, @border: 1px, @padding: 8px){
+.button(@color: #000, @fz: 18px, @border: 1px, @padding: 6px 15px){
   font-size: @fz;
   color: @color;
   border: @border solid @black;
@@ -48,13 +51,19 @@
 
 
 
-
+h2{
+  font-size: 35px;
+}
+h3{
+  font-size: 26px;
+  font-weight: 400;
+}
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6{
   font-weight: 300;
+  text-align: center;
 }

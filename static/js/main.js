@@ -28,6 +28,12 @@ $(document).ready(function() {
           verticalHeight: 320,
           vThumbWidth: 150
         }
+      //},
+      //{
+      //  breakpoint: 768,
+      //  settings: {
+      //    vertical: false
+      //  }
       }
     ]
   });
