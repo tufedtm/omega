@@ -1,0 +1,66 @@
+header{
+  nav{
+    border-top: 2px solid fade(@black, 20%);
+    border-bottom: 2px solid @black;
+  //  todo: bb как макете
+  }
+}
+
+.company{
+  .wrap();
+  display: flex;
+  justify-content: space-between;
+  padding-top: 13px;
+  padding-bottom: 20px;
+  line-height: 1.3;
+  img,
+  h1{
+    display: inline-block;
+    vertical-align: top;
+  }
+  img{
+    margin-right: 25px;
+  }
+  h1{
+    font-size: 26px;
+    max-width: 260px;
+  }
+}
+
+.address,
+.telephones{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.telephones span{
+  display: block;
+}
+
+.contacts{
+  text-align: right;
+  button{
+    .button-small;
+    display: block;
+    right: 0;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+}
+
+.nav{
+  .wrap();
+  display: flex;
+  justify-content: space-between;
+  a{
+    // todo: justify flex menu
+    word-spacing: 1em;
+    text-align: center;
+    padding: 10px 2%;
+    &:hover{
+      background-color: @black;
+      color: @white;
+    }
+  }
+}

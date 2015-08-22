@@ -1,0 +1,60 @@
+@black: #000;
+@white: #fff;
+@yellow: #FFDF00;
+@yellow-o: fade(@yellow, 40%);
+@grey-hard: #313140;
+@grey-hard-o: #5a5a66;
+
+
+
+
+
+
+
+
+.wrap(@maxw: 1108px){
+  max-width: @maxw;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+.button(@color: #000, @fz: 18px, @border: 1px, @padding: 8px){
+  font-size: @fz;
+  color: @color;
+  border: @border solid @black;
+  border-radius: 3px;
+  background-color: @yellow;
+  padding: @padding;
+  &:hover{
+    background-color: @black;
+    color: @white;
+  }
+}
+
+.button-small(){
+  .button();
+}
+
+.button-big{
+  .button(@fz: 22px, @border: 2px, @padding: 13px 26px);
+}
+
+
+
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-weight: 300;
+}
