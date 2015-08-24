@@ -1284,6 +1284,10 @@ footer a:hover {
 	height: 63%;
 }
 
+.ceiling-choice .spoilers {
+	max-width: 315px;
+}
+
 .ceiling-choice .spoiler {
 	font-weight: 300;
 	font-size: 26px;
@@ -1319,7 +1323,6 @@ footer a:hover {
 }
 
 .ceiling-choice .spectrum-wrap {
-	margin-left: 15px;
 	border: none;
 	background-color: rgba(236, 236, 251, 0.83);
 }
@@ -1483,6 +1486,14 @@ footer a:hover {
 	color: #ffffff;
 }
 
+@media (min-width: 360px) {
+
+.ceiling-choice .spectrum-wrap {
+	margin-left: 15px;
+}
+
+}
+
 @media (min-width: 473px) and (max-width: 790px) {
 
 .benefits-wrap ul li {
@@ -1500,6 +1511,19 @@ footer a:hover {
 .gallery-wrap > p {
 	padding-left: 44px;
 	padding-right: 44px;
+}
+
+}
+
+@media (max-width: 1024px) {
+
+.ceiling-choice .choicer-wrap {
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
 }
@@ -1573,6 +1597,14 @@ footer a:hover {
 
 .first__bottom p {
 	font-size: 16px;
+}
+
+}
+
+@media (max-width: 700px) {
+
+.ceiling-choice .wrap {
+	width: 100%;
 }
 
 }
@@ -1658,6 +1690,24 @@ footer a:hover {
 .company img {
 	width: 100%;
 	margin-right: 5px;
+}
+
+}
+
+@media (max-width: 365px) {
+
+.ceiling-choice .spoiler {
+	font-size: 21px;
+}
+
+}
+
+@media (max-width: 360px) {
+
+.ceiling-choice .spectrum-wrap .sp-palette-row {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
 }
 
 }
