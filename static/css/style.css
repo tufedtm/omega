@@ -1344,16 +1344,19 @@ footer a:hover {
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
-	overflow-x: auto;
 }
 
 .comparison-table h2 {
-	padding: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.comparison-table .table-wrap {
+	overflow-x: auto;
 }
 
 .comparison-table table {
 	width: 100%;
-	overflow: hidden;
 }
 
 .comparison-table tr:first-child td {
