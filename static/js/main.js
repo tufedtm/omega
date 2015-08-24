@@ -93,13 +93,4 @@ $(document).ready(function() {
     $("head style").remove();
   });
 
-  if (window.innerWidth < 1024) {
-    $("body").addClass("nohover");
-    $("td, th")
-      .attr("tabindex", "1")
-      .on("touchstart", function() {
-        $(this).focus();
-      });
-  }
-
 });
