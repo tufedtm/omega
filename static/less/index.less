@@ -34,14 +34,14 @@
     max-width: 380px;
     padding: 29px;
   }
-  p{
+  h1{
     font-size: 30px;
+    font-weight: 400;
   }
   input{
     .button-big();
     display: block;
-    margin: 0 auto;
-    margin-top: 25px;
+    margin: 25px auto 0;
   }
   input[type=tel]{
     background-color: transparent;
@@ -50,10 +50,6 @@
     padding-right: 0;
     text-align: inherit;
     color: @white;
-    &::placeholder{
-      color: @white;
-    }
-    //  todo: placeholder color @white
   }
   input[type=submit]{
     background-color: @black;
@@ -105,8 +101,8 @@
     padding-top: 45px;
     padding-bottom: 45px;
     @media (min-width: 992px) {
-      padding-left: 45px;
-      padding-right: 45px;
+      padding-left: 44px;
+      padding-right: 44px;
     }
   }
 }

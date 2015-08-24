@@ -1,0 +1,250 @@
+.our-products h1{
+  padding: 46px;
+  background-image: url(../img/our-products.jpg);
+  font-size: 35px;
+  color: @white;
+}
+
+.our-products__text{
+  .wrap(900px);
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  p + p{
+    margin-top: 10px;
+  }
+  ul{
+    line-height: 1.4;
+    padding-left: 35px;
+  }
+}
+
+.ceiling-choice{
+  background-color: fade(@yellow, 50%);
+  padding-bottom: 25px;
+  p{
+    .wrap(900px);
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 10px;
+    + p{
+      padding-top: 0;
+      padding-bottom: 10px;
+    }
+  }
+
+
+  .choicer-wrap{
+    .wrap(1050px);
+    display: flex;
+    justify-content: space-between;
+  }
+  .wrap{
+    width: 67%;
+    position: relative;
+  }
+  img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    &.jpg{
+      top: 0;
+      z-index: 1;
+    }
+  }
+  .chandelier{
+    left: -9%;
+    top: 0;
+    z-index: 2;
+    position: absolute;
+  }
+  .png{
+    top: 0;
+    position: absolute;
+    z-index: 2;
+    height: inherit;
+    &:before,
+    &:after{
+      background-color: transparent;
+      content: '';
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+      opacity: .5;
+    }
+    &:before{
+      height: 32%;
+    }
+    &:after{
+      bottom: 4px;
+      height: 63%;
+    }
+  }
+
+  .spoiler{
+    font-weight: 300;
+    font-size: 26px;
+    color: @white;
+    background-color: @grey-hard-o;
+    padding: 13px 55px 13px 13px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    &:before{
+      content: '';
+      width: 22px;
+      height: 12px;
+      position: absolute;
+      right: 15px;
+      top: calc(~"50% - 6px");
+      background-image: url(../img/products/spoiler-arrows.png);
+    }
+    &.spoiler-active{
+      margin-bottom: 0;
+      color: @yellow;
+      &:before{
+        background-position: right;
+      }
+    }
+  }
+  .spoiler-content-visible{
+    margin-bottom: -11px;
+  }
+
+  .spectrum-wrap{
+    margin-left: 15px;
+    border: none;
+    background-color: fade(@grey-light, 83%);
+    .sp-palette{
+      max-width: none;
+    }
+    .sp-palette-container{
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+    .sp-thumb-el{
+      width: 31px;
+      height: 26px;
+      margin: 3px;
+    }
+  }
+}
+
+
+
+
+
+
+
+.comparison-table{
+  .wrap(1108px);
+  h2{
+    padding: 40px;
+  }
+  table{
+    width: 100%;
+    overflow: hidden;
+  }
+  tr{
+    //background-color: @grey-middle-o;
+    &:first-child td{
+      font-size: 26px;
+      font-weight: 300;
+      text-align: center;
+      vertical-align: middle;
+    }
+    &:nth-child(odd) td:nth-child(odd),
+    &:nth-child(even) td:nth-child(even){
+      background-color: fade(@grey-middle, 95%);
+    }
+    &:nth-child(odd) td:nth-child(even),
+    &:nth-child(even) td:nth-child(odd){
+      background-color: fade(@grey-middle, 85%);
+    }
+
+    &:hover{
+      background-color: @yellow-o;
+      td{
+        background-color: transparent!important;
+        &:hover{
+          background-color: @yellow!important;
+        }
+      }
+    }
+  }
+  td{
+    width: 25%;
+    font-size: 18px;
+    padding: 10px;
+    position: relative;
+    &:first-child{
+      font-size: 26px;
+      font-weight: 300;
+      text-align: center;
+      vertical-align: middle;
+    }
+    &:after{
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+}
+
+
+
+
+
+
+
+.products-request{
+  .wrap(865px);
+  margin-top: 70px;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: @grey-light-o;
+  p{
+    font-size: 35px;
+    font-weight: 300;
+    padding: 20px;
+  }
+  form{
+    .wrap(585px);
+    position: relative;
+    font-size: 22px;
+    span{
+      position: absolute;
+      left: 28px;
+      top: 336px;
+    }
+  }
+  input,
+  textarea{
+
+    background-color: @grey-middle;
+    color: @white;
+    border: none;
+    padding: 13px;
+  }
+  input{
+    margin-bottom: 30px;
+  }
+  input:not([type=submit]),
+  textarea{
+    width: 100%;
+  }
+  textarea{
+    min-height: 110px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding-top: 35px;
+  }
+  input[type=submit]{
+    .button-big;
+    white-space: normal;
+  }
+}

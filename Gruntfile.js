@@ -52,7 +52,7 @@ module.exports = function(grunt){
     },
     concat: {
       script: {
-        src: ["static/js/main.js"],
+        src: ["static/lib/spectrum/spectrum.js", "static/js/main.js"],
         dest: "static/js/script.js"
       }
     },
