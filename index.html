@@ -31,7 +31,10 @@
     </div>
   </div>
 
-  <nav>
+
+  <input type="checkbox" id="navbar-checkbox" class="navbar-checkbox">
+
+  <nav class="menu">
     <div class="nav">
       <a href="index.html">Главная</a>
       <a href="products.html">Продукция</a>
@@ -41,7 +44,12 @@
       <a href="">Вопросы и ответы</a>
       <a href="">Контакты</a>
     </div>
+
+    <label for="navbar-checkbox" class="navbar-handle">
+      <span>МЕНЮ</span>
+    </label>
   </nav>
+
 </header>
 
 
@@ -82,13 +90,13 @@
 
 
     <ul class="gallery-slider">
-      <li data-thumb="static/img/gallery-item1.jpg">
+      <li data-thumb="static/img/_gallery-item1.jpg">
         <img src="static/img/_gallery-item1.jpg" alt=""/>
       </li>
-      <li data-thumb="static/img/gallery-item2.jpg">
+      <li data-thumb="static/img/_gallery-item2.jpg">
         <img src="static/img/_gallery-item2.jpg" alt=""/>
       </li>
-      <li data-thumb="static/img/gallery-item3.jpg">
+      <li data-thumb="static/img/_gallery-item3.jpg">
         <img src="static/img/_gallery-item3.jpg" alt=""/>
       </li>
     </ul>
@@ -193,7 +201,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="static/lib/jquery.min.js"><\/script>')</script>
 <script src="static/lib/lightslider/js/lightslider.min.js"></script>
-
+<script src="static/lib/jquery.spoiler.min.js"></script>
 <script src="static/js/script.min.js"></script>
 
 </body>

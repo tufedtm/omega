@@ -2,7 +2,7 @@ header{
   nav{
     border-top: 2px solid fade(@black, 20%);
     border-bottom: 2px solid @black;
-  //  todo: bb как макете
+    //  todo: bb как макете
   }
 }
 
@@ -10,10 +10,15 @@ header{
   .wrap();
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding-top: 13px;
   padding-bottom: 20px;
   line-height: 1.3;
+  @media (max-width: 1024px) {
+    padding-bottom: 10px;
+  }
+  @media (max-width: 800px) {
+    padding-bottom: 5px;
+  }
   @media (max-width: 510px) {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -45,7 +50,7 @@ header{
 .telephones{
   display: inline-block;
   vertical-align: top;
-  @media (max-width: 450px) {
+  @media (max-width: 510px) {
     p:nth-child(1),
     p:nth-child(3),
     span:first-child{
@@ -60,6 +65,9 @@ header{
 
 .contacts{
   text-align: right;
+  @media (max-width: 510px) {
+    max-width: 210px;
+  }
   button{
     .button-small;
     display: block;
@@ -67,8 +75,8 @@ header{
     position: relative;
     margin-left: 20px;
     margin-top: 10px;
-    @media (max-width: 450px) {
-      margin-left: 0;
+    @media (max-width: 1024px) {
+      display: none;
     }
   }
 }
@@ -77,9 +85,9 @@ header{
   .wrap();
   display: flex;
   justify-content: space-between;
-  @media (max-width: 900px) {
-    display: none;
-  }
+  //@media (max-width: 900px) {
+  //  display: none;
+  //}
   a{
     // todo: justify flex menu
     word-spacing: 1em;
@@ -89,5 +97,105 @@ header{
       background-color: @black;
       color: @white;
     }
+  }
+}
+
+
+
+
+.menu{
+  position: relative;
+  span{
+    display: none;
+    padding-right: 50px;
+    right: 0;
+    position: absolute;
+    bottom: 21%;
+    @media (max-width: 1024px) {
+      display: block;
+    }
+  }
+}
+
+.nav{
+  transition: max-height 0.25s linear;
+  padding: 0;
+  text-align: center;
+  a{
+    transition: visibility .25s linear;
+    display: inline-block;
+    padding: .45em 1.1em;
+    margin: 0 .3em;
+    position: relative;
+  }
+}
+
+
+.navbar-checkbox {
+  display: none;
+}
+.navbar-handle {
+  display: none;
+  cursor: pointer;
+  padding: 13px;
+  height: 0;
+  width: 1.66666667em;
+  border-top: .13333333em solid;
+  position: absolute;
+  font-size: 1.2em;
+  right: 12px;
+  z-index: 10;
+  bottom: 100%;
+}
+.navbar-handle:before,
+.navbar-handle:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  content: ' ';
+  border-top: 0.13333333em solid;
+}
+.navbar-handle:before {
+  top: 0.37777778em;
+}
+.navbar-handle:after {
+  top: 0.88888889em;
+}
+
+@media (max-width: 1024px) {
+  .menu{
+    border-color: transparent;
+  }
+  .menu .nav {
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 0 10px;
+    margin: 0;
+  }
+  .menu a {
+    visibility: hidden;
+    display: block;
+    padding: 0.5em 0.6em;
+    border: none;
+    word-spacing: 0;
+  }
+  .navbar-handle {
+    display: block;
+  }
+  #navbar-checkbox:checked ~ .menu {
+    border-top: 2px solid fade(@black, 20%);
+    border-bottom: 2px solid @black;
+  }
+  #navbar-checkbox:checked ~ .menu .nav {
+    max-height: 300px;
+  }
+  #navbar-checkbox:checked ~ .menu a {
+    visibility: visible;
+  }
+  #navbar-checkbox:checked + .navbar-handle,
+  #navbar-checkbox:checked + .navbar-handle:after,
+  #navbar-checkbox:checked + .navbar-handle:before {
+    border-color: #aaa;
   }
 }

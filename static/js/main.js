@@ -83,6 +83,14 @@ $(document).ready(function() {
   $(".spoiler").spoiler();
   //  > ceiling-choice
 
+
+
+
+
+
+
+  // table hover <
+
   $(".comparison-table td").mouseover(function() {
     var tds = $( this ).parent().find("td"),
       index = $.inArray( this, tds );
@@ -92,5 +100,7 @@ $(document).ready(function() {
   }).mouseout(function() {
     $("head style").remove();
   });
+
+  // > table hover
 
 });
