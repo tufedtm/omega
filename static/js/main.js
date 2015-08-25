@@ -98,7 +98,7 @@ $(document).ready(function() {
       '.comparison-table td:nth-child(' + (index + 1) + '){background-color:rgba(255,223,0,.4)!important}' +
       '</style>').appendTo('head');
   }).mouseout(function() {
-    $("head style").remove();
+    $("head style:last-child").remove();
   });
 
   // > table hover
