@@ -1,8 +1,11 @@
-.our-products h1{
+.h1-title{
   padding: 46px;
-  background-image: url(../img/our-products.jpg);
+  background-size: cover;
   font-size: 35px;
   color: @white;
+}
+.our-products .h1-title{
+  background-image: url(../img/our-products.jpg);
 }
 
 .our-products__text{
@@ -157,12 +160,14 @@
 
 .comparison-table{
   .wrap(1108px);
+  @media (max-width: 850px) {
+    .table-wrap{
+      overflow-x: auto;
+    }
+  }
   h2{
     padding-top: 40px;
     padding-bottom: 40px;
-  }
-  .table-wrap{
-    overflow-x: auto;
   }
   table{
     width: 100%;
@@ -174,6 +179,59 @@
       text-align: center;
       vertical-align: middle;
     }
+    &:first-child,
+    &:last-child{
+      td:nth-child(2):before{
+        content: '';
+        position: absolute;
+        background-color: inherit;
+        width: 100%;
+        left: 0;
+        z-index: -1;
+      }
+    }
+    &:first-child td:nth-child(2):before{
+      height: 125px;
+      bottom: 100%;
+    }
+    &:last-child
+    td:nth-child(2):before{
+      height: 62%;
+      top: 100%;
+    }
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(10){
+      td:first-child:before{
+        content: '';
+        position: absolute;
+        background-color: inherit;
+        height: 100%;
+        right: 100%;
+        top: 0;
+      }
+    }
+    &:nth-child(2),
+    &:nth-child(10){
+      td:first-child:before{
+        width: 500%;
+      }
+    }
+    &:nth-child(4) td:first-child:before{
+      width: 10%;
+    }
+    &:nth-child(7),
+    &:nth-child(13){
+      td:last-child:before{
+        content: '';
+        position: absolute;
+        background-color: inherit;
+        height: 100%;
+        width: 500%;
+        left: 100%;
+        top: 0;
+      }
+    }
     &:nth-child(odd) td:nth-child(odd),
     &:nth-child(even) td:nth-child(even){
       background-color: fade(@grey-middle, 95%);
@@ -182,11 +240,9 @@
     &:nth-child(even) td:nth-child(odd){
       background-color: fade(@grey-middle, 85%);
     }
-
     &:hover{
-      background-color: @yellow-o;
       td{
-        background-color: transparent!important;
+        background-color: @yellow-o!important;
         &:hover{
           background-color: @yellow!important;
         }
@@ -204,15 +260,15 @@
       text-align: center;
       vertical-align: middle;
     }
-    &:after{
-      content: '';
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-    }
+    //&:after{
+    //  content: '';
+    //  width: 100%;
+    //  height: 100%;
+    //  position: absolute;
+    //  top: 0;
+    //  left: 0;
+    //  z-index: 1;
+    //}
   }
 }
 
