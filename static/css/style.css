@@ -1719,6 +1719,10 @@ footer a:hover {
 	overflow-x: auto;
 }
 
+.comparison-table .table-wrap table {
+	overflow: hidden;
+}
+
 }
 
 @media (max-width: 800px) {
