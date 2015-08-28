@@ -577,6 +577,13 @@ h6 {
 	text-align: center;
 }
 
+.h1-title {
+	padding: 46px;
+	background-size: cover;
+	font-size: 35px;
+	color: #ffffff;
+}
+
 body {
 	font-family: Gotham, sans-serif;
 	font-weight: 400;
@@ -1140,9 +1147,9 @@ header nav {
 .articles-item {
 	position: relative;
 	background-color: rgba(236, 236, 251, 0.5);
-	-webkit-flex-basis: 250px;
-	-ms-flex-preferred-size: 250px;
-	flex-basis: 250px;
+	-webkit-flex-basis: 300px;
+	-ms-flex-preferred-size: 300px;
+	flex-basis: 300px;
 	-webkit-flex-grow: 1;
 	-ms-flex-positive: 1;
 	flex-grow: 1;
@@ -1243,13 +1250,6 @@ footer a:hover {
 
 .cpr:hover {
 	text-decoration: none;
-}
-
-.h1-title {
-	padding: 46px;
-	background-size: cover;
-	font-size: 35px;
-	color: #ffffff;
 }
 
 .our-products .h1-title {
@@ -1754,6 +1754,15 @@ hr {
 	z-index: -1;
 }
 
+.articles-main h1 {
+	background-image: url(../img/articles.png);
+}
+
+.articles-main .articles-wrap {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
 @media (min-width: 360px) {
 
 .ceiling-choice .spectrum-wrap {
@@ -1924,6 +1933,20 @@ hr {
 
 }
 
+@media (max-width: 1007px) {
+
+.articles {
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.articles-item {
+	max-width: 50%;
+}
+
+}
+
 @media (max-width: 1000px) {
 
 .benefits-wrap {
@@ -1946,16 +1969,6 @@ hr {
 
 .first__bottom p {
 	font-size: 22px;
-}
-
-.articles {
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-}
-
-.articles-item {
-	max-width: 50%;
 }
 
 }
@@ -2034,6 +2047,14 @@ hr {
 
 }
 
+@media (max-width: 686px) {
+
+.articles-item {
+	max-width: 70%;
+}
+
+}
+
 @media (max-width: 602px) {
 
 .for-dealers__item:last-child {
@@ -2066,14 +2087,6 @@ hr {
 
 .benefits-wrap:after {
 	top: 101px;
-}
-
-}
-
-@media (max-width: 586px) {
-
-.articles-item {
-	max-width: 70%;
 }
 
 }
