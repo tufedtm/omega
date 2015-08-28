@@ -1,0 +1,136 @@
+.faq-page{
+  h1{
+    background-image: url(../img/faq.png);
+  }
+}
+
+.questions-wrap{
+  font-size: 22px;
+  color: @grey-text;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.questions__text{
+  .wrap(1000px);
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.questions{
+  .wrap(1078px);
+  position: relative;
+  background-color: fade(@yellow, 51%);
+  color: @black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @media (min-width: 1000px) {
+    padding-left: 240px;
+    &:before{
+      content: '?';
+      position: absolute;
+      color: @yellow;
+      background-color: fade(@grey-hard, 50%);
+      font-size: 200px;
+      right: 80%;
+      padding-right: 50px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 70%;
+      width: 500%;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      left: 100%;
+      background-color: inherit;
+      width: 500%;
+      height: 100%;
+      top: 0;
+    }
+    p:first-child{
+      margin-top: 13px;
+    }
+  }
+  p + p{
+    margin-top: 13px;
+  }
+}
+
+.answers{
+  .wrap(990px);
+  margin-bottom: 100px;
+  h2{
+    font-size: 26px;
+    color: @black;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    @media (max-width: 600px) {
+      font-size: 22px;
+    }
+  }
+}
+
+
+
+
+
+
+
+.faq-form{
+  text-align: center;
+  h3{
+    background-color: @grey-hard-o;
+    color: @yellow;
+    font-weight: 300;
+    padding: 18px;
+    @media (max-width: 600px) {
+      font-size: 22px;
+    }
+  }
+  form{
+    .wrap(835px);
+    background-color: @grey-light-o;
+    margin-bottom: 50px;
+    font-size: 22px;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    @media (min-width: 600px) {
+      padding-left: 140px;
+      padding-right: 140px;
+      span{
+        left: 150px;
+      }
+    }
+    span{
+      position: absolute;
+      top: 200px;
+      left: 25px;
+    }
+  }
+  input:not([type=submit]),
+  textarea{
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: @grey-middle;
+    border: none;
+    color: @white;
+    padding: 13px;
+  }
+  textarea{
+    min-height: 110px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding-top: 35px;
+  }
+  input[type=submit]{
+    .button-big;
+    white-space: normal;
+  }
+}

@@ -595,7 +595,8 @@ body {
 }
 
 body.products-page,
-body.gallery-page {
+body.gallery-page,
+body.faq-page {
 	background-image: url(../img/body-bg-1.png);
 }
 
@@ -1985,6 +1986,120 @@ hr {
 	color: #ffffff;
 }
 
+.faq-page h1 {
+	background-image: url(../img/faq.png);
+}
+
+.questions-wrap {
+	font-size: 22px;
+	color: #31313f;
+}
+
+.questions__text {
+	max-width: 1030px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.questions {
+	max-width: 1108px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+	background-color: rgba(255, 223, 0, 0.51);
+	color: #000000;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.questions p + p {
+	margin-top: 13px;
+}
+
+.answers {
+	max-width: 1020px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 100px;
+}
+
+.answers h2 {
+	font-size: 26px;
+	color: #000000;
+	font-weight: 400;
+	text-align: left;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+.faq-form {
+	text-align: center;
+}
+
+.faq-form h3 {
+	background-color: rgba(49, 49, 64, 0.8);
+	color: #ffdf00;
+	font-weight: 300;
+	padding: 18px;
+}
+
+.faq-form form {
+	max-width: 865px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: rgba(236, 236, 251, 0.5);
+	margin-bottom: 50px;
+	font-size: 22px;
+	position: relative;
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
+.faq-form form span {
+	position: absolute;
+	top: 200px;
+	left: 25px;
+}
+
+.faq-form input:not([type=submit]),
+.faq-form textarea {
+	margin-bottom: 30px;
+	width: 100%;
+	background-color: #cacad9;
+	border: none;
+	color: #ffffff;
+	padding: 13px;
+}
+
+.faq-form textarea {
+	min-height: 110px;
+	margin-bottom: 30px;
+	font-size: 18px;
+	padding-top: 35px;
+}
+
+.faq-form input[type=submit] {
+	font-size: 22px;
+	color: #000000;
+	border: 2px solid #000000;
+	border-radius: 3px;
+	background-color: #ffdf00;
+	padding: 13px 26px;
+	white-space: normal;
+}
+
+.faq-form input[type=submit]:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+
 @media (min-width: 360px) {
 
 .ceiling-choice .spectrum-wrap {
@@ -2005,6 +2120,19 @@ hr {
 
 }
 
+@media (min-width: 600px) {
+
+.faq-form form {
+	padding-left: 140px;
+	padding-right: 140px;
+}
+
+.faq-form form span {
+	left: 150px;
+}
+
+}
+
 @media (min-width: 992px) {
 
 .gallery-wrap > p {
@@ -2019,6 +2147,49 @@ hr {
 	width: 130%;
 	background-image: url(../img/for-dealers.jpg);
 	position: absolute;
+}
+
+}
+
+@media (min-width: 1000px) {
+
+.questions {
+	padding-left: 240px;
+}
+
+.questions:before {
+	content: '?';
+	position: absolute;
+	color: #ffdf00;
+	background-color: rgba(49, 49, 64, 0.5);
+	font-size: 200px;
+	right: 80%;
+	padding-right: 50px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 70%;
+	width: 500%;
+}
+
+.questions:after {
+	content: '';
+	position: absolute;
+	left: 100%;
+	background-color: inherit;
+	width: 500%;
+	height: 100%;
+	top: 0;
+}
+
+.questions p:first-child {
+	margin-top: 13px;
 }
 
 }
@@ -2283,6 +2454,10 @@ hr {
 	display: none;
 }
 
+.questions-wrap {
+	font-size: 18px;
+}
+
 }
 
 @media (max-width: 767px) {
@@ -2354,6 +2529,14 @@ hr {
 
 .gallery-page__callback .gallery-page__callback__text {
 	font-size: 18px;
+}
+
+.answers h2 {
+	font-size: 22px;
+}
+
+.faq-form h3 {
+	font-size: 22px;
 }
 
 }
