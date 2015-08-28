@@ -1,6 +1,7 @@
 @import "../lib/bootstrap.css";
 @import "../lib/lightslider/css/lightslider.min.css";
 @import "../lib/spectrum/spectrum.css";
+@import "../lib/magnific-popup/magnific-popup.css";
 @import "base";
 @import "fonts";
 @import "mixins";
@@ -12,7 +13,8 @@ body{
   background: url(../img/body-bg-2.png) no-repeat bottom;
   background-size: contain;
   overflow-x: hidden;
-  &.products-page{
+  &.products-page,
+  &.gallery-page{
     background-image: url(../img/body-bg-1.png);
   }
   &.dealers-page{
@@ -50,3 +52,4 @@ textarea:focus::placeholder{
 @import "products";
 @import "dealers";
 @import "articles";
+@import "gallery";
