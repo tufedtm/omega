@@ -1,0 +1,149 @@
+.contacts-main{
+  h1{
+    background-color: @grey-hard-o;
+  }
+  form{
+    .wrap(865px);
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    background-color: @grey-light-light-o;
+    padding-top: 30px;
+    padding-left: 155px;
+    padding-right: 155px;
+    margin-bottom: 50px;
+    @media (max-width: 768px) {
+      max-width: 585px;
+      padding-left: 15px;
+      padding-right: 15px;
+      span{
+        left: 28px;
+      }
+    }
+    span{
+      position: absolute;
+      left: 168px;
+      top: 360px;
+    }
+  }
+  input,
+  textarea{
+    background-color: @grey-middle;
+    color: @white;
+    border: none;
+    padding: 13px;
+  }
+  input{
+    margin-bottom: 30px;
+  }
+  input:not([type=submit]),
+  textarea{
+    width: 100%;
+  }
+  textarea{
+    min-height: 110px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding-top: 35px;
+  }
+  input[type=submit]{
+    .button-big;
+    white-space: normal;
+  }
+}
+
+.contacts__map{
+  position: relative;
+  @media (max-width: 1023px) {
+    img{
+      display: none;
+    }
+    .contacts__text{
+      left: 0;
+      max-width: 315px;
+      overflow: hidden;
+    }
+  }
+  @media (max-width: 600px) {
+    h1{
+      font-size: 22px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    > p{
+      font-size: 20px;
+    }
+    .contacts__text{
+      font-size: 18px;
+      padding-left: 10px;
+      padding-right: 10px;
+      max-width: 215px;
+    }
+  }
+  h1{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+  img{
+    position: absolute;
+    z-index: 1;
+    top: calc(~"50% - 160px");
+    left: 30px;
+  }
+  > p {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: @yellow;
+    background-color: fade(@grey-hard, 50%);
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.5;
+    padding: 12px;
+  }
+}
+
+.map__content{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-width: 1108px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.contacts__text{
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  top: calc(~"50% - 80px");
+  background-color: fade(@yellow, 80%);
+  font-size: 22px;
+  font-weight: 300;
+  padding: 15px 40px;
+  &:before,
+  &:after{
+    content: '';
+    position: absolute;
+    top: 0;
+  }
+  &:before{
+    right: 100%;
+    border-top: 45px solid fade(@yellow, 80%);
+    border-left: 45px solid transparent;
+  }
+  &:after{
+    height: 100%;
+    width: 500%;
+    left: 100%;
+    background-color: inherit;
+  }
+  span{
+    border-bottom: 1px solid;
+  }
+}

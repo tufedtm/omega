@@ -596,7 +596,8 @@ body {
 
 body.products-page,
 body.gallery-page,
-body.faq-page {
+body.faq-page,
+body.contacts-page {
 	background-image: url(../img/body-bg-1.png);
 }
 
@@ -2100,6 +2101,147 @@ hr {
 	color: #ffffff;
 }
 
+.contacts-main h1 {
+	background-color: rgba(49, 49, 64, 0.8);
+}
+
+.contacts-main form {
+	max-width: 895px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+	font-size: 22px;
+	text-align: center;
+	background-color: rgba(236, 236, 251, 0.5);
+	padding-top: 30px;
+	padding-left: 155px;
+	padding-right: 155px;
+	margin-bottom: 50px;
+}
+
+.contacts-main form span {
+	position: absolute;
+	left: 168px;
+	top: 360px;
+}
+
+.contacts-main input,
+.contacts-main textarea {
+	background-color: #cacad9;
+	color: #ffffff;
+	border: none;
+	padding: 13px;
+}
+
+.contacts-main input {
+	margin-bottom: 30px;
+}
+
+.contacts-main input:not([type=submit]),
+.contacts-main textarea {
+	width: 100%;
+}
+
+.contacts-main textarea {
+	min-height: 110px;
+	margin-bottom: 30px;
+	font-size: 18px;
+	padding-top: 35px;
+}
+
+.contacts-main input[type=submit] {
+	font-size: 22px;
+	color: #000000;
+	border: 2px solid #000000;
+	border-radius: 3px;
+	background-color: #ffdf00;
+	padding: 13px 26px;
+	white-space: normal;
+}
+
+.contacts-main input[type=submit]:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.contacts__map {
+	position: relative;
+}
+
+.contacts__map h1 {
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+}
+
+.contacts__map img {
+	position: absolute;
+	z-index: 1;
+	top: calc(50% - 160px);
+	left: 30px;
+}
+
+.contacts__map > p {
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: #ffdf00;
+	background-color: rgba(49, 49, 64, 0.5);
+	font-size: 26px;
+	font-weight: 300;
+	line-height: 1.5;
+	padding: 12px;
+}
+
+.map__content {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	max-width: 1108px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.contacts__text {
+	position: absolute;
+	right: 0;
+	z-index: 1;
+	top: calc(50% - 80px);
+	background-color: rgba(255, 223, 0, 0.8);
+	font-size: 22px;
+	font-weight: 300;
+	padding: 15px 40px;
+}
+
+.contacts__text:before,
+.contacts__text:after {
+	content: '';
+	position: absolute;
+	top: 0;
+}
+
+.contacts__text:before {
+	right: 100%;
+	border-top: 45px solid rgba(255, 223, 0, 0.8);
+	border-left: 45px solid transparent;
+}
+
+.contacts__text:after {
+	height: 100%;
+	width: 500%;
+	left: 100%;
+	background-color: inherit;
+}
+
+.contacts__text span {
+	border-bottom: 1px solid;
+}
+
 @media (min-width: 360px) {
 
 .ceiling-choice .spectrum-wrap {
@@ -2305,6 +2447,20 @@ hr {
 
 }
 
+@media (max-width: 1023px) {
+
+.contacts__map img {
+	display: none;
+}
+
+.contacts__map .contacts__text {
+	left: 0;
+	max-width: 315px;
+	overflow: hidden;
+}
+
+}
+
 @media (max-width: 1010px) {
 
 .for-dealers__item {
@@ -2458,6 +2614,16 @@ hr {
 	font-size: 18px;
 }
 
+.contacts-main form {
+	max-width: 585px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.contacts-main form span {
+	left: 28px;
+}
+
 }
 
 @media (max-width: 767px) {
@@ -2537,6 +2703,23 @@ hr {
 
 .faq-form h3 {
 	font-size: 22px;
+}
+
+.contacts__map h1 {
+	font-size: 22px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.contacts__map > p {
+	font-size: 20px;
+}
+
+.contacts__map .contacts__text {
+	font-size: 18px;
+	padding-left: 10px;
+	padding-right: 10px;
+	max-width: 215px;
 }
 
 }
