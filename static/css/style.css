@@ -1325,13 +1325,13 @@ footer a:hover {
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
-	font-size: 18px;
+	font-size: 22px;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
 
-.our-products__text p + p {
-	margin-top: 10px;
+.our-products__text p {
+	text-align: center;
 }
 
 .our-products__text ul {
