@@ -68,7 +68,7 @@ header{
   @media (max-width: 510px) {
     max-width: 210px;
   }
-  button{
+  a{
     .button-small;
     display: block;
     right: 0;
@@ -198,4 +198,50 @@ header{
   #navbar-checkbox:checked + .navbar-handle:before {
     border-color: #aaa;
   }
+}
+
+
+
+
+
+
+
+.header-form{
+  .wrap(700px);
+  text-align: center;
+  position: relative;
+  h3{
+    background-color: @grey-hard-o;
+    color: @yellow;
+    font-weight: 300;
+    padding: 18px;
+  }
+  form{
+    background-color: fade(@grey-light, 80%);
+    padding: 20px 20px 50px;
+  }
+  input:not([type=submit]){
+    width: 90%;
+    margin-bottom: 25px;
+    background-color: @grey-hard-o;
+    border: none;
+    padding: 13px;
+    font-size: 22px;
+    color: @white;
+  }
+  input[type=submit]{
+    .button-big;
+  }
+  .mfp-close{
+    right: 85px;
+    top: 20px;
+    font-size: 100px;
+    color: @yellow;
+    opacity: 1;
+    font-weight: 100;
+    font-family: inherit;
+  }
+}
+.mfp-bg{
+  background: @yellow-o;
 }

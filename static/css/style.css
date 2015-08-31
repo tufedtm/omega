@@ -747,7 +747,7 @@ header nav {
 	text-align: right;
 }
 
-.contacts button {
+.contacts a {
 	font-size: 18px;
 	color: #000000;
 	border: 1px solid #000000;
@@ -761,7 +761,7 @@ header nav {
 	margin-top: 10px;
 }
 
-.contacts button:hover {
+.contacts a:hover {
 	background-color: #000000;
 	color: #ffffff;
 }
@@ -849,6 +849,65 @@ header nav {
 
 .navbar-handle:after {
 	top: 0.88888889em;
+}
+
+.header-form {
+	max-width: 730px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	position: relative;
+}
+
+.header-form h3 {
+	background-color: rgba(49, 49, 64, 0.8);
+	color: #ffdf00;
+	font-weight: 300;
+	padding: 18px;
+}
+
+.header-form form {
+	background-color: rgba(236, 236, 251, 0.8);
+	padding: 20px 20px 50px;
+}
+
+.header-form input:not([type=submit]) {
+	width: 90%;
+	margin-bottom: 25px;
+	background-color: rgba(49, 49, 64, 0.8);
+	border: none;
+	padding: 13px;
+	font-size: 22px;
+	color: #ffffff;
+}
+
+.header-form input[type=submit] {
+	font-size: 22px;
+	color: #000000;
+	border: 2px solid #000000;
+	border-radius: 3px;
+	background-color: #ffdf00;
+	padding: 13px 26px;
+}
+
+.header-form input[type=submit]:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.header-form .mfp-close {
+	right: 85px;
+	top: 20px;
+	font-size: 100px;
+	color: #ffdf00;
+	opacity: 1;
+	font-weight: 100;
+	font-family: inherit;
+}
+
+.mfp-bg {
+	background: rgba(255, 223, 0, 0.4);
 }
 
 .first {
@@ -1371,7 +1430,7 @@ footer a:hover {
 	font-size: 26px;
 	color: #ffffff;
 	background-color: rgba(49, 49, 64, 0.8);
-	padding: 13px 55px 13px 13px;
+	padding: 13px 54px 13px 13px;
 	margin-bottom: 2px;
 	cursor: pointer;
 	position: relative;
@@ -1890,7 +1949,7 @@ hr {
 	font-size: 30px;
 	max-width: 580px;
 	text-align: center;
-	padding: 20px;
+	padding: 19px;
 	position: relative;
 	top: 30px;
 	z-index: 1;
@@ -2505,7 +2564,7 @@ hr {
 	padding-bottom: 10px;
 }
 
-.contacts button {
+.contacts a {
 	display: none;
 }
 
