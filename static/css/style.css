@@ -1863,7 +1863,7 @@ hr {
 	padding-top: 25px;
 	padding-bottom: 45px;
 	font-size: 22px;
-	color: #31313f;
+	text-align: center;
 }
 
 .lSSlideOuter:not(.vertical) .gallery-page__slider-pager-wrap {
@@ -2061,6 +2061,7 @@ hr {
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
+	color: #000000;
 	text-align: center;
 	padding-top: 30px;
 	padding-bottom: 30px;
