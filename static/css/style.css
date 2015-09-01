@@ -2672,6 +2672,14 @@ hr {
 
 }
 
+@media (max-width: 1100px) {
+
+.lSSlideOuter:not(.vertical) .lSSlideWrapper {
+	max-width: 65%;
+}
+
+}
+
 @media (max-width: 1024px) {
 
 .company {
@@ -2810,6 +2818,10 @@ hr {
 	padding-right: 0;
 }
 
+.lSSlideOuter:not(.vertical) .lSSlideWrapper {
+	max-width: 61%;
+}
+
 }
 
 @media (max-width: 991px) {
@@ -2880,6 +2892,14 @@ hr {
 
 }
 
+@media (max-width: 900px) {
+
+.lSSlideOuter:not(.vertical) .lSSlideWrapper {
+	max-width: 56%;
+}
+
+}
+
 @media (max-width: 860px) {
 
 .first__bottom p {
@@ -2896,6 +2916,14 @@ hr {
 
 .comparison-table .table-wrap table {
 	overflow: hidden;
+}
+
+}
+
+@media (max-width: 810px) {
+
+.lSSlideOuter:not(.vertical) .lSSlideWrapper {
+	max-width: 52%;
 }
 
 }
