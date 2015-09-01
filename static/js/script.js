@@ -2420,7 +2420,9 @@ $(document).ready(function() {
   });
 
 
-  $(".spoiler").spoiler();
+  $(".spoiler").spoiler({
+    paddingValue: 55
+  });
   //  > ceiling-choice
 
 
@@ -2458,7 +2460,7 @@ $(document).ready(function() {
     vertical: false,
     verticalHeight: 489,
     vThumbWidth: 243,
-    thumbItem: 5,
+    thumbItem: 4,
     thumbMargin: 30,
     slideMargin: 0,
     galleryMargin: 10,

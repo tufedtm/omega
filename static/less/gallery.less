@@ -6,6 +6,8 @@
     .wrap(1108px);
     padding-top: 50px;
     padding-bottom: 20px;
+    padding-right: 35px;
+    position: relative;
     @media (max-width: 768px) {
       display: none;
     }
@@ -29,12 +31,95 @@
 
 .gallery-main__text{
   .wrap(1045px);
-  padding-top: 25px;
-  padding-bottom: 45px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   font-size: 22px;
   text-align: center;
   @media (max-width: 600px) {
     font-size: 16px;
+  }
+}
+
+.gallery-filters{
+  background-color: @yellow;
+  max-width: 350px;
+  padding: 15px;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  &:before{
+    content: '';
+    position: absolute;
+    background-color: inherit;
+    width: 500%;
+    height: 100%;
+    top: 0;
+    right: 100%;
+  }
+  p{
+    text-align: center;
+    font-size: 26px;
+    margin: 0 0 15px;
+    color: @black;
+  }
+  .spoiler{
+    font-weight: 300;
+    font-size: 26px;
+    color: @white;
+    background-color: @grey-hard-o;
+    padding: 13px 42px 13px 13px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    @media (max-width: 365px) {
+      font-size: 21px;
+    }
+    &:before{
+      content: '';
+      width: 22px;
+      height: 12px;
+      position: absolute;
+      right: 15px;
+      top: calc(~"50% - 6px");
+      background-image: url(../img/products/spoiler-arrows.png);
+    }
+    &.spoiler-active{
+      margin-bottom: 0;
+      color: @yellow;
+      &:before{
+        background-position: right;
+      }
+    }
+  }
+  .spoiler-content-visible{
+    background-color: fade(@grey-light, 83%);
+    color: @grey-text;
+    padding: 30px;
+  }
+  input[type=checkbox]{
+    display: none;
+    &:checked + label:before{
+      background-color: @yellow;
+    }
+  }
+  label{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    padding-left: 25px;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: calc(~"50% - 6px");
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: 1px solid;
+    }
   }
 }
 
@@ -88,6 +173,10 @@
         right: 10px;
       }
     }
+  }
+  .lSSlideWrapper{
+    max-width: 68%;
+    margin-left: auto;
   }
 }
 
@@ -154,6 +243,11 @@
     }
     span{
       color: @yellow;
+    }
+    @media (min-width: 350px) {
+      p:nth-of-type(2){
+        text-align: right;
+      }
     }
     p + p{
       margin-top: 20px;
