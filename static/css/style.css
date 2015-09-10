@@ -1246,6 +1246,7 @@ header nav {
 }
 
 .articles-item h3 {
+	max-width: 280px;
 	margin: 10px auto;
 }
 
